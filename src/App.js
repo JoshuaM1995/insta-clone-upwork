@@ -58,7 +58,7 @@ export default function App() {
                         <Route 
                           path={ROUTES.ADD_IMAGE} 
                           element={
-                            <ProtectedRoute>
+                            <ProtectedRoute user={user}>
                               <AddImage />
                             </ProtectedRoute>
                           } 
